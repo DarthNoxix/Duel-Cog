@@ -1,8 +1,3 @@
-# Procedurally generated duel cog for Red-DiscordBot
-# Copyright (c) 2016 Caleb Jonson
-# Idea and rule system courtesy of Axas
-# Additional moves suggested by OrdinatorStouff
-
 import asyncio
 import discord
 from functools import partial
@@ -39,17 +34,17 @@ def indicatize(d):
 
 WEAPONS = {
     'swing': {
-        'axe': 3,
-        'scimitar': 4,
-        'buzzsaw': 5,
-        'chainsaw': 6,
-        'broadsword': 7,
-        'katana': 4,
-        'falchion': 5
+        'gladius': 3,
+        'spatha': 4,
+        'pilum': 5,
+        'pugio': 6,
+        'spear': 7,
+        'hasta': 4,
+        'dagger': 5
     },
     'fire': {
-        'raygun': 5,
-        'flamethrower': 6,
+        'scorpion': 5,
+        'bow': 6,
         'crossbow': 3,
         'railgun': 6,
         'ballista': 6,
@@ -58,23 +53,23 @@ WEAPONS = {
         'mortar': 3
     },
     'stab': {
-        'naginata': 5,
+        'falx': 5,
         'lance': 4
     }
 }
 
 SINGLE_PROJECTILE = {
     'fire': {
-        'a psionic projectile': 4,
+        'a plumbata': 4,
     },
     'hurl': {
         'pocket sand': 1,
-        'a spear': 6,
-        'a heavy rock': 3,
+        'a pilum': 6,
+        'a heavy marble brick from Rome': 3,
     },
     'toss': {
-        'a moltov cocktail': 4,
-        'a grenade': 5
+        'a fire pot': 4,
+        'a Roman skull': 5
     }
 }
 
@@ -83,8 +78,8 @@ FAMILIAR = {
         'their owl companion': 3,
     },
     'charge': {
-        'their pet goat': 3,
-        'their pet unicorn': 4,
+        'their pet crocodile': 3,
+        'their arabian stalion': 4,
     },
     'constrict': {
         'their thick anaconda': 4,
@@ -93,12 +88,12 @@ FAMILIAR = {
 
 SUMMON = {
     'charge': {
-        'a badass tiger': 5,
-        'a sharknado': 8,
-        'a starving komodo dragon': 5
+        'a tiger': 5,
+        'a lion': 8,
+        'a pack of Gladiators hyenas': 5
     },
     'swarm': {
-        'all these muthafucking snakes': 5,
+        'all these Roman snakes': 5,
     }
 }
 
@@ -208,7 +203,7 @@ FUMBLE = {"{a} closes in on {d}, but suddenly remembers a funny joke and laughs 
           "{a} {v} their {o}, but fumbles and drops it on their {b}!": indicatize(WEAPONS)
           }
 
-BOT = {"{a} charges its laser aaaaaaaand... BZZZZZZT! {d} is now a smoking crater for daring to challenge the bot.": INITIAL_HP}
+BOT = {"{a} dodged the blow, stepped back, and beat the opponent who dared to challenge him to a pulp.": INITIAL_HP}
 
 HITS = ['deals', 'hits for']
 RECOVERS = ['recovers', 'gains', 'heals']
