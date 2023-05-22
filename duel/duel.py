@@ -203,7 +203,7 @@ FUMBLE = {"{a} closes in on {d}, but suddenly remembers a funny joke and laughs 
           "{a} {v} their {o}, but fumbles and drops it on their {b}!": indicatize(WEAPONS)
           }
 
-BOT = {"{a} dodged the blow, stepped back, and beat the opponent who dared to challenge him to a pulp.": INITIAL_HP}
+BOT = {"{a} called out to @Jupiter, who in his divine grace sent several bolts of lightning down on the opponent who dared to challenge the God of Dueling.": INITIAL_HP}
 
 HITS = ['deals', 'hits for']
 RECOVERS = ['recovers', 'gains', 'heals']
