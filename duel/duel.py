@@ -203,7 +203,7 @@ FUMBLE = {"{a} closes in on {d}, but suddenly remembers a funny joke and laughs 
           "{a} {v} their {o}, but fumbles and drops it on their {b}!": indicatize(WEAPONS)
           }
 
-BOT = {"{a} called out to his father Jupiter, who in his divine grace sent several bolts of lightning down on the opponent who dared to challenge the God of War.": INITIAL_HP}
+BOT = {"Jupiter, his divine grace sent several bolts of lightning down on the opponent who dared to challenge him. For the offense, Jupiter orders you to go to his temple and pray to him.": INITIAL_HP}
 
 HITS = ['deals', 'hits for']
 RECOVERS = ['recovers', 'gains', 'heals']
@@ -427,7 +427,7 @@ class Duel(commands.Cog):
     async def _protect_user(self, ctx, user: discord.Member):
         """Adds a member to the protection list"""
         if await self.protect_common(user, True):
-            await ctx.send("Jupiter has received your prayer. You are now protected from all duels.")
+            await ctx.send("I, Jupiter, have received your prayer. You are now protected from all duels.")
         else:
             await ctx.send("That person is already under the protection of Jupiter.")
 
